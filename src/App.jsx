@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import NavBar from "./Components/Navbar";
+import NavBar from "../src/Components/NavBar";
 import TitleFiller from "./Components/TitleFiller";
 import SearchBar from "./Components/SearchBar";
 import FilterFavButton from "./Components/FilterFavButton";
