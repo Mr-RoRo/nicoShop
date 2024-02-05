@@ -32,7 +32,7 @@
     background-size: contain;
     cursor: pointer;
   }
-  @media (max-width: 425px) {
+  @media (max-width: 768px) {
     .searchBar--input {
       width: 100%;
     }

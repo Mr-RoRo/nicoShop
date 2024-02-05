@@ -20,7 +20,7 @@
   color: rgba(0, 38, 58, 0.5);
   margin-left: 12px;
 }
-@media (max-width: 425px) {
+@media (max-width: 768px) {
   .app--background--filters {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

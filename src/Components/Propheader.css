@@ -36,7 +36,7 @@
   .propheader--origin {
     cursor: pointer;
   }
-  @media (max-width: 425px) {
+  @media (max-width: 768px) {
     .propheader--container {
       height: 80px;
       display: flex;
