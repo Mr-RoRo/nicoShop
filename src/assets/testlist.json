@@ -1,0 +1,25 @@
+{
+    "productList": [
+        {
+            "id": "Cre02",
+            "image": "Crevette_Geante_Tigrée_testimage.png",
+            "name": "Crevette Géante Tigrée",
+            "variants": ["Cru", "Décongelé" ,"30/40"],
+            "grade": "A+",
+            "catching": "Elevage",
+            "origin": "EC",
+            "price": 34,
+            "priceUnit": "kg"
+        }, {
+            "id": "Dor01",
+            "image": "Dorade_Royale_Pêche_Côtière_testimage.png",
+            "name": "Dorade Royale Pêche Côtière",
+            "variants": [],
+            "grade": "S",
+            "catching": "Filet Maillant",
+            "origin": "FR",
+            "price": 37,
+            "priceUnit": "kg"
+        }
+    ]
+}

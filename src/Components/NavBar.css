@@ -1,0 +1,28 @@
+.NavBar {
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #00263A;
+    height: 116px;
+    padding: 0 40px;
+    margin-bottom: 120px;
+}
+
+.nav--tynico {
+    flex: 0.9;
+    align-items: center;
+    max-height: 63px;
+}
+
+.nav--title {
+    flex: 0.3;
+    color: #FFFFFF;
+}
+
+.nav--subtitle {
+    flex: 0.3;
+    color: #FFFFFF;
+}

@@ -1,0 +1,266 @@
+.propitem--container {
+  background-color: #fff;
+  margin-top: 6px;
+  margin-left: 12px;
+  margin-right: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  display: grid;
+  grid-template-columns: 1.1fr 5fr 4fr 3fr 1.5fr 1.5fr 1.5fr 1fr 2fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.propitem--image {
+  max-height: 48px;
+  max-width: 48px;
+  height: 48px;
+  width: 48px;
+  object-fit: scale-down;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  margin: 6px;
+  margin-right: 20px;
+}
+
+.propitem--image--modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 2;
+}
+
+.propitem--image--fullsize {
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  display: block;
+}
+
+.propitem--name--text,
+.propitem--variants--textA,
+.propitem--variants--textB,
+.propitem--variants--text,
+.propitem--catching--text,
+.propitem--grade--text,
+.propitem--priceunit--textprice,
+.propitem--priceunit--currency,
+.propitem--priceunit--textunit,
+.propitem--quantity--input {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  color: #00263a;
+}
+
+.propitem--priceunit {
+  max-width: 90px;
+}
+
+.propitem--variants {
+  display: flex;
+}
+
+.propitem--variants--container {
+  display: inline-block;
+  padding: 0px 5px 1px 5px;
+  box-sizing: content-box;
+  background-color: rgba(0, 38, 58, 0.1);
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+.propitem--grade {
+  display: flex;
+}
+
+.propitem--grade--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 18px;
+  background-color: rgba(0, 38, 58, 0.1);
+  border-radius: 10px;
+}
+
+.propitem--grade--container.S_plus {
+  background-color: rgb(67, 255, 130);
+}
+
+.propitem--grade--container.S {
+  background-color: rgb(148, 255, 196);
+}
+
+.propitem--grade--container.A_plus {
+  background-color: rgb(67, 233, 255);
+}
+
+.propitem--grade--container.A {
+  background-color: rgb(135, 241, 255);
+}
+
+.propitem--origincontainer {
+  max-width: 24px;
+  max-height: 18px;
+  border: 1px solid #00263a;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.propitem--originflag {
+  object-fit: cover;
+  margin-bottom: 1px;
+  width: 115%;
+}
+
+.propitem--priceunit--textprice,
+.propitem--priceunit--currency,
+.propitem--priceunit--textunit {
+  margin: 1px;
+}
+
+.propitem--quantity--input {
+  max-width: 40px;
+  height: 23px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.propitem--quantity--input::placeholder {
+  color: rgba(0, 38, 58, 0.25);
+}
+
+.propitem--buttons {
+  margin-right: 40px;
+  display: flex;
+}
+
+.propitem--buttons--history,
+.propitem--buttons--favorite,
+.propitem--buttons--addtocart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  margin: 2.5px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.propitem--buttons--history {
+  visibility: hidden;
+}
+
+.propitem--buttons--favorite,
+.propitem--buttons--addtocart {
+  cursor: pointer;
+}
+
+.propitem--buttons--addtocart {
+  background-color: #00263a;
+}
+
+.propitem--buttons--history > svg,
+.propitem--buttons--favorite > svg,
+.propitem--buttons--addtocart > svg {
+  overflow: visible;
+  width: 130%;
+  height: 130%;
+}
+
+.propitem--buttons--favorite.active {
+  background-color: #00263a;
+}
+
+.propitem--buttons--history.active {
+  visibility: visible;
+}
+
+.propitem--buttons--favorite.active > svg > path {
+  fill: #fff;
+}
+
+/* Hiding pesky outer/inner spins on number inputs */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+@media (max-width: 425px) {
+  .propitem--buttons {
+    align-items: center;
+    margin: 0;
+  }
+  .propitem--container {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 10px;
+  }
+  .propitem--container--left {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .propitem--wrapper--grade--origin {
+    display: flex;
+    gap: 10px;
+  }
+  .propitem--container--right {
+    display: flex;
+    flex-direction: column;
+  }
+  .propitem--image {
+    margin-right: 0;
+    align-self: flex-end;
+  }
+  .propitem--name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+  .propitem--btn--open--variants--catching {
+    cursor: pointer;
+    border-radius: 100%;
+    width: 20px;
+    text-align: center;
+    transition: background-color 0.2s ease-in-out;
+  }
+  .propitem--btn--open--variants--catching:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .wrapper--openBtn--variants--catching--box {
+    position: relative;
+  }
+  .variants--catching--box {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    padding: 5px 10px;
+    height: 80px;
+    position: absolute;
+    top: -80px;
+    left: 15px;
+    overflow: scroll;
+  }
+  .propitem--variants {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+}

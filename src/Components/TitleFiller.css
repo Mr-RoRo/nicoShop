@@ -1,0 +1,13 @@
+.TitleFiller {
+  color: #00263a;
+}
+
+.titlefiller--text {
+  text-align: center;
+  font-size: 35px;
+}
+@media (max-width: 425px) {
+  .titlefiller--text {
+    font-size: 25px;
+  }
+}
