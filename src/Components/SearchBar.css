@@ -39,5 +39,9 @@
   }
   .searchBar--input {
     width: 100%;
+    padding-left: 8px;
+  }
+  .searchBar--input::placeholder {
+    font-size: 10px;
   }
 }
