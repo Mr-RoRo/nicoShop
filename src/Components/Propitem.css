@@ -265,6 +265,6 @@ input[type="number"] {
     gap: 5px;
   }
   .propitem--originflag {
-    width: 100%;
+    width: 125%;
   }
 }
