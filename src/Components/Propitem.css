@@ -264,4 +264,7 @@ input[type="number"] {
     flex-wrap: wrap;
     gap: 5px;
   }
+  .propitem--originflag {
+    width: 100%;
+  }
 }
