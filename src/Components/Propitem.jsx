@@ -124,7 +124,7 @@ function Propitem(props) {
               <div className="propitem--origincontainer">
                 <img
                   className="propitem--originflag"
-                  src={`https:www.flagsapi.com/${origin}/flat/64.png`}
+                  src={`https://www.flagsapi.com/${origin}/flat/64.png`}
                 ></img>
               </div>
             </div>
