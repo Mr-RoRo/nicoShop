@@ -98,3 +98,8 @@
 input[type="checkbox"] {
     margin-right: 8px;
 }
+@media (max-width: 480px) {
+    .FilterGradeDropdown--button{
+        width: 100%;
+    }
+  }

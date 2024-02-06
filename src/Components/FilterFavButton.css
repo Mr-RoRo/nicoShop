@@ -1,37 +1,46 @@
 .filterButtonFav {
-    margin-top: 30px;
-    margin-right: 20px;
-    width: 120px;
-    height: 36px;
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    color: #000;
-    border: 1px solid #000;
-    border-radius: 5px;
-    cursor: pointer;
+  margin-top: 30px;
+  margin-right: 20px;
+  width: 120px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .filterButtonFav--text {
-    font-family: 'Inter', sans-serif;
-    color: #00263A;
-    font-size: 12px;
-    margin-left: 6px;
-    margin-right: auto;
+  font-family: "Inter", sans-serif;
+  color: #00263a;
+  font-size: 12px;
+  margin-left: 6px;
+  margin-right: auto;
 }
 
 .filterButtonFav.active {
-    background-color: #00263A;
+  background-color: #00263a;
 }
 
 .filterButtonFav--text.active {
-    font-family: 'Inter', sans-serif;
-    color: #fff;
-    font-size: 12px;
-    margin-left: 6px;
-    margin-right: auto;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  font-size: 12px;
+  margin-left: 6px;
+  margin-right: auto;
 }
 
 .filterButtonFav--icon {
-    margin-left: 18px;
+  margin-left: 18px;
+}
+@media (max-width: 480px) {
+  .filterButtonFav {
+    width: 100%;
+    margin-right: 0;
+  }
+  .filterButtonFav--icon {
+    margin-left: auto;
+  }
 }

@@ -6,7 +6,7 @@
   text-align: center;
   font-size: 35px;
 }
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .titlefiller--text {
     font-size: 25px;
   }

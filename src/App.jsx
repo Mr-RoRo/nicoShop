@@ -27,6 +27,9 @@ function App() {
   const [isFavButtonOn, setIsFavButtonOn] = useState(false);
   const [isHistButtonOn, setIsHistButtonOn] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
+  const [onMobile, setOnMobile] = useState(
+    window.innerWidth < 480 ? true : false
+  );
   const [propHeaderArrowStates, setPropHeaderArrowStates] = useState({
     name: "arrowSleep",
     catching: "arrowSleep",
@@ -194,8 +197,17 @@ function App() {
         item={item}
         onFavoriteToggle={handleFavoriteToggle}
         onHistoryToggle={handleHistoryToggle}
+        onMobile={onMobile}
       />
     );
+  });
+
+  window.addEventListener("resize", () => {
+    if (innerWidth < 480) {
+      setOnMobile(true);
+    } else {
+      setOnMobile(false);
+    }
   });
 
   return (
@@ -226,7 +238,7 @@ function App() {
           <ResetFiltersButton onReset={handleFiltersReset} />
         </span>
         <h4 className="app--background--productQty">{qty} produits</h4>
-        <Propheader onChange={handlePropHeaderArrowToggle} />
+        {!onMobile && <Propheader onChange={handlePropHeaderArrowToggle} />}
         {items}
       </div>
     </div>

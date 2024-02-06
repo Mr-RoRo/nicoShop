@@ -50,7 +50,6 @@ function Propitem(props) {
   const [isFavorite, setIsFavorite] = useState(false);
   const [isHistory, setIsHistory] = useState(false);
   const [openVariantsCatching, setOpenVariantsCatching] = useState(false);
-  const [windowsWidth, setWindowsWidth] = useState();
 
   // handler declaration
   const handleFavoriteClick = () => {
@@ -82,13 +81,9 @@ function Propitem(props) {
     setOpenVariantsCatching(!openVariantsCatching);
   };
 
-  window.addEventListener("resize", () => {
-    if (innerWidth < 425) setWindowsWidth(innerWidth);
-  });
-
   return (
     <div className="propitem--container">
-      {windowsWidth < 425 ? (
+      {props.onMobile ? (
         <>
           <div className="propitem--container--left">
             <div className="propitem--name">

@@ -203,7 +203,7 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .propitem--buttons {
     align-items: center;
     margin: 0;
@@ -229,6 +229,7 @@ input[type="number"] {
   .propitem--image {
     margin-right: 0;
     align-self: flex-end;
+    font-size: 5px;
   }
   .propitem--name {
     display: flex;
