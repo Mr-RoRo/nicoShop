@@ -216,26 +216,63 @@ function App() {
       <TitleFiller />
       <div className="app--background">
         <span className="app--background--filters">
-          <SearchBar onQuery={handleSearchQuery} parentState={searchQuery} />
-          <FilterFavButton
-            onToggle={handleFavButtonToggle}
-            parentState={isFavButtonOn}
-          />
-          <FilterHistoryButton
-            onToggle={handleHistButtonToggle}
-            parentState={isHistButtonOn}
-          />
-          <FilterOriginDropdown
-            list={productlist}
-            onChange={handleOriginChange}
-            parentState={selectedOrigins}
-          />
-          <FilterGradeDropdown
-            list={productlist}
-            onChange={handleGradeChange}
-            parentState={selectedGrades}
-          />
-          <ResetFiltersButton onReset={handleFiltersReset} />
+          {onMobile ? (
+            <>
+              <div className="app--background--filters--left">
+                <SearchBar
+                  onQuery={handleSearchQuery}
+                  parentState={searchQuery}
+                />
+                <FilterFavButton
+                  onToggle={handleFavButtonToggle}
+                  parentState={isFavButtonOn}
+                />
+                <FilterHistoryButton
+                  onToggle={handleHistButtonToggle}
+                  parentState={isHistButtonOn}
+                />
+              </div>
+              <div className="app--background--filters--right">
+                <FilterOriginDropdown
+                  list={productlist}
+                  onChange={handleOriginChange}
+                  parentState={selectedOrigins}
+                />
+                <FilterGradeDropdown
+                  list={productlist}
+                  onChange={handleGradeChange}
+                  parentState={selectedGrades}
+                />
+                <ResetFiltersButton onReset={handleFiltersReset} />
+              </div>
+            </>
+          ) : (
+            <>
+              <SearchBar
+                onQuery={handleSearchQuery}
+                parentState={searchQuery}
+              />
+              <FilterFavButton
+                onToggle={handleFavButtonToggle}
+                parentState={isFavButtonOn}
+              />
+              <FilterHistoryButton
+                onToggle={handleHistButtonToggle}
+                parentState={isHistButtonOn}
+              />
+              <FilterOriginDropdown
+                list={productlist}
+                onChange={handleOriginChange}
+                parentState={selectedOrigins}
+              />
+              <FilterGradeDropdown
+                list={productlist}
+                onChange={handleGradeChange}
+                parentState={selectedGrades}
+              />
+              <ResetFiltersButton onReset={handleFiltersReset} />
+            </>
+          )}
         </span>
         <h4 className="app--background--productQty">{qty} produits</h4>
         {!onMobile && <Propheader onChange={handlePropHeaderArrowToggle} />}

@@ -43,5 +43,6 @@
   }
   .filterButtonHistory--icon {
     margin: 0;
+    margin-left: auto;
   }
 }

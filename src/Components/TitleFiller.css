@@ -9,5 +9,6 @@
 @media (max-width: 480px) {
   .titlefiller--text {
     font-size: 25px;
+    margin-bottom: 20px;
   }
 }

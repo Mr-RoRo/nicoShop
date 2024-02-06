@@ -35,8 +35,9 @@
 @media (max-width: 480px) {
   .searchBar {
     width: 100%;
-  }
-  .searchBar {
     margin-left: 0;
+  }
+  .searchBar--input {
+    width: 100%;
   }
 }

@@ -22,17 +22,12 @@
 }
 @media (max-width: 480px) {
   .app--background--filters {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
     column-gap: 10px;
-  }
-  .app--background--filters :nth-child(1) {
-    grid-column: 1/4;
   }
   .app--background {
     margin: 0 10px;
   }
   .app--background--filters {
-    margin: 0 25px;
+    margin: 0 12px;
   }
 }

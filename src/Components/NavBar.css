@@ -26,3 +26,8 @@
     flex: 0.3;
     color: #FFFFFF;
 }
+@media (max-width: 480px) {
+    .NavBar{
+        padding: 0 15px;
+    }
+}
