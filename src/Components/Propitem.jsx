@@ -31,6 +31,7 @@ function Propitem(props) {
   const catching = props.item.catching;
   // origin (alpha-2 country code string)
   const origin = props.item.origin;
+  const originSrc = `https://www.flagsapi.com/${origin}/flat/64.png`;
   // price (number)
   const price = props.item.price;
   // price unit (string)
@@ -248,10 +249,7 @@ function Propitem(props) {
             </div>
           </div>
           <div className="propitem--origincontainer">
-            <img
-              className="propitem--originflag"
-              src={`https://www.flagsapi.com/${origin}/flat/64.png`}
-            ></img>
+            <img className="propitem--originflag" src={originSrc}></img>
           </div>
           <div className="propitem--priceunit">
             <span className="propitem--priceunit--textprice">{price}</span>
