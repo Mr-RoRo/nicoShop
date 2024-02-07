@@ -159,7 +159,8 @@
 }
 
 .propitem--buttons--history {
-  visibility: hidden;
+  /* visibility: hidden; */
+  display: none;
 }
 
 .propitem--buttons--favorite,
